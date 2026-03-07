@@ -3,13 +3,13 @@
 https://arxiv.org/abs/1905.13237
 Please consider citing the above paper if you make use of this code. All descriptions involving numbered equations in this code's documentation are in reference to the above paper.
  *  \author    Thomas Osburn
- *  \version   0.1
- *  \date      2019
- *  \copyright Copyright (C) Thomas Osburn 2019
+ *  \version   0.2
+ *  \date      2026
+ *  \copyright Copyright (C) Thomas Osburn 2026
  */
 
 /*
-Copyright (C) 2019 Thomas Osburn
+Copyright (C) 2026 Thomas Osburn
 */
 
 /*!
