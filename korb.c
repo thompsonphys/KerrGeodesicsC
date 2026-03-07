@@ -1,5 +1,5 @@
 // This software describes the generic bound motion of a test mass around a Kerr black hole. 
-// Copyright (C) 2019  Thomas Osburn
+// Copyright (C) 2026 Thomas Osburn
 //
 // Please consider citing the following paper if you make use of this code:
 // https://arxiv.org/abs/1905.13237
