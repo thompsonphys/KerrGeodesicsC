@@ -12,19 +12,6 @@ Please consider citing the above paper if you make use of this code. All descrip
 Copyright (C) 2019 Thomas Osburn
 */
 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 /*!
 * This data structure encodes all information needed to reconstruct the position of a test mass orbiting a Kerr black hole at any time via Fourier series. The pointers within will become lists of Fourier coefficients once they are allocated by the function "korb_getparams"
 */ 
