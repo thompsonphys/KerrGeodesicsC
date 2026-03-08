@@ -571,7 +571,7 @@ if(orbpar->inclined==0)
   {
   orbpar->Yphi += korb_Pth(0.0,*orbpar);
   orbpar->Ga += korb_Tth(0.0,*orbpar);
-  orbpar->wth = 0;
+  orbpar->wth = 0.0;
   }
 if(orbpar->eccentric==0)
   {
