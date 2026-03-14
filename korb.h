@@ -12,6 +12,9 @@ Please consider citing the above paper if you make use of this code. All descrip
 Copyright (C) 2026 Thomas Osburn
 */
 
+
+#include <complex.h>
+
 /*!
 * This data structure encodes all information needed to reconstruct the position of a test mass orbiting a Kerr black hole at any time via Fourier series. The pointers within will become lists of Fourier coefficients once they are allocated by the function "korb_getparams"
 */ 

@@ -6,7 +6,6 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <complex.h>
 #include <fftw3.h>
 #include <gsl/gsl_math.h>
 #include <gsl/gsl_sf.h>

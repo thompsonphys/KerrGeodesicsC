@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kerrgeodesics"
+version = "0.2"
+description = "Python bindings for KerrGeodesicsC"
+requires-python = ">=3.8"
+
+[tool.setuptools]
+py-modules = ["kerrgeodesics_extension"]
