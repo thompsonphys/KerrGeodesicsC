@@ -9,4 +9,4 @@ description = "Python bindings for KerrGeodesicsC"
 requires-python = ">=3.8"
 
 [tool.setuptools]
-py-modules = ["kerrgeodesics_extension"]
+py-modules = ["kerrgeodesics"]
