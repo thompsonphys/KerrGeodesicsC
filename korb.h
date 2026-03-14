@@ -267,3 +267,7 @@ extern void korb_rmfdf(double rm, void *params, double *y, double *dy);
 */
 extern double korb_rsubtrplusfromrs(double rs, double a);
 
+/*!
+* Compute the particle four-velocity from psi
+*/
+extern double korb_getfourvel_equatorial(double psi, korb_params orbpar);

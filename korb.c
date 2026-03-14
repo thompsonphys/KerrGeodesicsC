@@ -605,6 +605,32 @@ free(orbpar.Pthamps);
 }
 return 1;}
 
+double korb_getfourvel_equatorial(double psi, korb_params orbpar){
+  double x, F, N, C, signA, a, p, e, E;
+  double p2, p3, e2p3, X2;
+
+  a = orbpar.a;
+  p = orbpar.p;
+  e = orbpar.e;
+  E = orbpar.E;
+
+  signA = a > 0.0 ? 1.0 : -1.0;
+
+  p2 = p * p;
+  p3 = p2 * p;
+  e2p3 = 3.0 + e * e;
+
+  C = (a * a - p);
+  C *= C;
+  N = 2.0 / p * (-p2 + (e2p3 - a * a) * p - a * a * (1.0 + 3.0 * e * e));
+  F = 1.0 / p3 * (p3 - 2.0 * e2p3 * p2 + e2p3 * e2p3 * p - 4.0 * a * a * (1.0 - e * e) * (1.0 - e * e));
+
+  x = sqrt((-N - signA * sqrt(N * N - 4.0 * F * C)) / (2.0 * F));
+  X2 = x * x;
+
+  return e * sin(psi) / p * (X2 + a * a + 2.0 * x * a * E - 2.0 * X2 / p * (3.0 + e * cos(psi)));
+}
+
 /*!
 * The main function takes arguments: eccentric (boolean), inclined (boolean), a (double), p (double), e (double), x (double), lambdaSteps (integer), lambdaMax (double), and from those arguments calculates and prints the constants of motion, orbital frequencies, and position at equally spaced Mino times. Must compile with flag '-DLINK_DEFAULT' when not linking through another program.
 */ 

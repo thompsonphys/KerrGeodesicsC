@@ -205,3 +205,6 @@ def korb_rsfromrsubtrplus(rsubtrplus, a):
 def korb_rsubtrplusfromrs(rs, a):
     return _kerrgeodesics.korb_rsubtrplusfromrs(rs, a)
 
+def korb_getfourvel_equatorial(psi, orbpar):
+    return _kerrgeodesics.korb_getfourvel_equatorial(psi, orbpar)
+
