@@ -6,5 +6,4 @@ latex/*
 .vscode
 __pycache__
 *.egg*
-*_wrap.c
 *.cpython*
