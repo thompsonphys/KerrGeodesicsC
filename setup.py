@@ -5,7 +5,7 @@ prefix = os.environ.get("CONDA_PREFIX", "/usr")
 
 kerrgeodesics_extension = Extension(
     "_kerrgeodesics",
-    sources=["kerrgeodesics_wrap.c", "korb.c"],
+    sources=["kerrgeodesics.i", "korb.c"],
     include_dirs=[prefix + "/include"],
     library_dirs=[prefix + "/lib"],
     runtime_library_dirs=[prefix + "/lib"],

@@ -8,3 +8,4 @@ __pycache__
 *.egg*
 *.cpython*
 *_wrap.c
+kerrgeodesics.py
