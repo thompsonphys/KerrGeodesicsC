@@ -53,7 +53,7 @@ class KerrOrbit:
     def __init__(
         self,
         spin=0.0,
-        semilatus_rect=10.0,
+        semilatus_rectum=10.0,
         eccentricity=0.0,
         x=1.0,
         err=1e-15,
@@ -69,7 +69,7 @@ class KerrOrbit:
             eccentric,
             inclined,
             spin,
-            semilatus_rect,
+            semilatus_rectum,
             eccentricity,
             x,
             err,
@@ -141,7 +141,7 @@ class KerrOrbit:
         return self._params.a
 
     @property
-    def semilatus_rect(self):
+    def semilatus_rectum(self):
         return self._params.p
 
     @property
