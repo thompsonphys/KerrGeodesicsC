@@ -607,7 +607,7 @@ return 1;}
 
 double korb_getfourvel_equatorial(double psi, korb_params orbpar){
   double x, F, N, C, signA, a, p, e, E;
-  double p2, p3, e2p3, X2;
+  double p2, p3, e2p3, X2, R2;
 
   a = orbpar.a;
   p = orbpar.p;
@@ -628,7 +628,8 @@ double korb_getfourvel_equatorial(double psi, korb_params orbpar){
   x = sqrt((-N - signA * sqrt(N * N - 4.0 * F * C)) / (2.0 * F));
   X2 = x * x;
 
-  return e * sin(psi) / p * (X2 + a * a + 2.0 * x * a * E - 2.0 * X2 / p * (3.0 + e * cos(psi)));
+  R2 = X2 + a * a + 2.0 * x * a * E - 2.0 * X2 / p * (3.0 + e * cos(psi));
+  return e * sin(psi) / p * sqrt(R2 > 0.0 ? R2 : 0.0);
 }
 
 /*!
